@@ -1,91 +1,122 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "ComfyUI Easy Use",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/logo.svg",
+    "light": "/logo/logo.svg"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/logo/logo.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
-    "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+    "primary": "#4BD3FB",
+    "dark": "#4BD3FB",
+    "light": "#4BD3FB",
+    "background": {
+      "dark": "#020418"
     }
   },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+  "versions": [{
+    "name": "English",
+    "locale": "en"
+  }, {
+    "name": "简体中文",
+    "locale": "cn"
+  }],
+  "backgroundImage": "/images/background.png",
+  "layout": "sidenav",
+  "font": {
+    "headings": {
+      "family": "Lato"
+    },
+    "body": {
+      "family": "Lato"
     }
-  ],
+  },
+  "modeToggle": {
+    "default": "dark",
+    "isHidden": true
+  },
+  "topbarLinks": [],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "type": "github",
+    "url": "https://github.com/yolain/ComfyUI-Easy-Use"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "name": "Workflow Examples",
+      "icon": "window",
+      "url": "https://github.com/yolain/comfyui-yolain-workflows",
+      "version": "English"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "name": "工作流示例",
+      "icon": "window",
+      "url": "https://github.com/yolain/comfyui-yolain-workflows",
+      "version": "简体中文"
     },
     {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "name": "ComfyUI Docs",
+      "icon": "compass",
+      "url": "https://docs.comfy.org",
+      "version": "English"
+    },
+    {
+      "name": "ComfyUI官方文档",
+      "icon": "compass",
+      "url": "https://docs.comfy.org",
+      "version": "简体中文"
+    },
+    {
+      "name": "Video Tutorials",
+      "icon": "video",
+      "url": "https://www.xiaohongshu.com/user/profile/5a78992a4eacab58ad42cd1e",
+      "version": "English"
+    },
+    {
+      "name": "视频教程",
+      "icon": "video",
+      "url": "https://www.xiaohongshu.com/user/profile/5a78992a4eacab58ad42cd1e",
+      "version": "简体中文"
     }
   ],
   "navigation": [
     {
       "group": "Get Started",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "en/get-started/introduction",
+        "zh-CN/get-started/introduction",
+        "en/get-started/installation",
+        "zh-CN/get-started/installation",
+        "en/get-started/hotkey",
+        "zh-CN/get-started/hotkey",
+        "en/get-started/swap",
+        "zh-CN/get-started/swap"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Nodes Category",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "en/nodes/util",
+        "zh-CN/nodes/util",
+        "en/nodes/seed",
+        "zh-CN/nodes/seed",
+        "en/nodes/prompt",
+        "en/nodes/latent",
+        "en/nodes/loaders",
+        "en/nodes/adapter",
+        "en/nodes/inpaint",
+        "en/nodes/preSampling",
+        "en/nodes/kSamplers",
+        "en/nodes/fix",
+        "en/nodes/pipe",
+        "en/nodes/xyInputs",
+        "en/nodes/image",
+        "en/nodes/segmentation",
+        "en/nodes/logic",
+        "en/nodes/api"
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "github": "https://github.com/yolain/comfyui-easy-use"
   }
 }

@@ -1,0 +1,38 @@
+---
+sidebarTitle: "Seed (2)"
+title: "Seed"
+icon: ""
+description: ""
+version: "English"
+---
+
+## EasySeed
+Generally inserted into sampler or pre-sampling parameter nodes.
+
+**Name**: `easy seed`<br/>
+**Widgets**:
+<ParamField path="seed" type="int|seed">
+Comfy's regular seed widget.
+</ParamField>
+**Outputs**:
+<ParamField query="seed" type="int|seed">
+The seed value.
+</ParamField>
+
+## EasyGlobalSeed
+Can affect all seed values in the workflow.
+
+**Name**: `easy globalSeed`<br/>
+**Widgets**:
+<ParamField query="value" type="int|seed">
+The seed value.
+</ParamField>
+<ParamField query="mode" type="combo" default="control_before_generate">
+widget control generate seed mode.
+</ParamField>
+<ParamField query="action" type="combo" default="fixed">
+widget control generate seed action.
+</ParamField>
+<ParamField query="last_seed" type="int|seed">
+The last seed value.
+</ParamField>
