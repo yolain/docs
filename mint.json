@@ -2,10 +2,10 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "ComfyUI Easy Use",
   "logo": {
-    "dark": "/logo/logo.svg",
-    "light": "/logo/logo.svg"
+    "dark": "favicon.svg",
+    "light": "favicon.svg"
   },
-  "favicon": "/logo/logo.svg",
+  "favicon": "favicon.svg",
   "colors": {
     "primary": "#4BD3FB",
     "dark": "#4BD3FB",
