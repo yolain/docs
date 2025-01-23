@@ -1,6 +1,111 @@
 ---
-sidebarTitle: "Loaders (17)"
+sidebarTitle: "Loaders (18)"
 title: "Loaders"
 icon: ""
 description: ""
 ---
+
+## EasyLoader (Full)
+<Tabs>
+  <Tab title="Node Preview">
+    <Frame>
+    <img src="../../images/nodes/easyLoaderFull.jpg" />
+    </Frame>
+  </Tab>
+  <Tab title="Example">
+      <Frame>
+      <img src="../../images/nodes/example/easyLoaderFull.jpg" />
+      </Frame>
+  </Tab>
+</Tabs>
+
+**Name**: `easy fullLoader`<br/>
+**Input Parameters**:
+<ParamField path="model_override" type="string">
+(Optional) Connect to the others diffusion model (unet)
+</ParamField>
+<ParamField path="clip_override" type="string">
+(Optional) Connect to the others clip model
+</ParamField>
+<ParamField path="vae_override" type="string">
+(Optional) Connect to the others vae model
+</ParamField>
+<ParamField path="optional_lora_stack" type="string">
+(Optional) Connect to the lora models stack
+</ParamField>
+<ParamField path="optional_controlnet_stack" type="string">
+(Optional) Connect to the controlnet models stack
+</ParamField>
+**Widget**:
+<ParamField path="ckpt_name" type="string">
+Choose the checkpoint model
+</ParamField>
+<ParamField path="config_name" type="string" default="Default">
+Outdated configuration
+</ParamField>
+<ParamField path="vae_name" type="string" default="Baked VAE">
+Choose the vae model
+</ParamField>
+<ParamField path="clip_skip" type="int" default="-2">
+clip stop at which layer
+</ParamField>
+<ParamField path="lora_name" type="int" default="None">
+Choose the lora model
+</ParamField>
+<ParamField path="resolution" type="combo" default="width x height (custom)">
+Choose the lora model
+</ParamField>
+<ParamField path="width" type="int" default="512">
+Empty latent width
+</ParamField>
+<ParamField path="height" type="int" default="512">
+Empty latent height
+</ParamField>
+<ParamField path="positive" type="string">
+Input the positive prompt
+</ParamField>
+<ParamField path="positive_token_normalization" type="combo" default="none">
+token normalization
+</ParamField>
+<ParamField path="positive_weight_interpretation" type="combo" default="comfy">
+weight interpretation
+</ParamField>
+<ParamField path="negative" type="string">
+Input the negative prompt
+</ParamField>
+<ParamField path="negative_token_normalization" type="combo" default="none">
+token normalization
+</ParamField>
+<ParamField path="negative_weight_interpretation" type="combo" default="comfy">
+weight interpretation
+</ParamField>
+<ParamField path="batch_size" type="int" default="1">
+empty latent batch size
+</ParamField>
+<ParamField path="a1111_prompt_style" type="boolean" default="false">
+enable a1111 prompt style
+</ParamField>
+**Output Parameters**:
+<ParamField path="pipe" type="PIPE_LINE">
+output the easy pipeline
+</ParamField>
+<ParamField path="model" type="string">
+output the diffusion model
+</ParamField>
+<ParamField path="clip" type="string">
+output the clip model
+</ParamField>
+<ParamField path="vae" type="string">
+output the vae model
+</ParamField>
+<ParamField path="positive" type="conditioning">
+output the positive conditioning
+</ParamField>
+<ParamField path="negative" type="conditioning">
+output the negative conditioning
+</ParamField>
+<ParamField path="latent" type="string">
+output the empty latent
+</ParamField>
+
+
