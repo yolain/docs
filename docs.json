@@ -1,0 +1,121 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "ComfyUI Easy Use",
+  "theme": "mint",
+  "logo": "/images/logo.svg",
+  "favicon": "favicon.svg",
+  "colors": {
+    "primary": "#4BD3FB",
+    "dark": "#4BD3FB",
+    "light": "#4BD3FB"
+  },
+  "background": {
+    "color":{
+      "dark": "#020418"
+    },
+    "image": "/images/background.png"
+  },
+  "appearance": {
+    "default": "dark",
+    "isHidden": true
+  },
+  "fonts": {
+    "heading": {
+      "family": "Lato",
+      "weight": 600
+    },
+    "body": {
+      "family": "Lato",
+      "weight": 400
+    }
+  },
+  "navigation": {
+    "languages": [
+      {
+        "language": "en",
+        "groups": [{
+          "group": "Get Started",
+          "pages": [
+            "en/get-started/introduction",
+            "en/get-started/installation",
+            "en/get-started/hotkey",
+            "en/get-started/swap"
+          ]
+        },
+        {
+          "group": "Nodes Category",
+          "pages": [
+            "en/nodes/util",
+            "en/nodes/seed",
+            "en/nodes/prompt",
+            "en/nodes/loaders",
+            "en/nodes/adapter",
+            "en/nodes/inpaint",
+            "en/nodes/preSampling",
+            "en/nodes/samplers",
+            "en/nodes/fix",
+            "en/nodes/pipe",
+            "en/nodes/xyInputs",
+            "en/nodes/image",
+            "en/nodes/segmentation",
+            "en/nodes/logic",
+            "en/nodes/api"
+          ]
+        }
+        ]
+      },
+      {
+        "language": "cn",
+        "groups": [{
+          "group": "开始使用",
+          "pages": [
+            "zh-CN/get-started/introduction",
+            "zh-CN/get-started/installation",
+            "zh-CN/get-started/hotkey",
+            "zh-CN/get-started/swap"
+          ]
+        },
+          {
+            "group": "节点分类",
+            "pages": [
+              "zh-CN/nodes/util",
+              "zh-CN/nodes/seed",
+              "zh-CN/nodes/prompt"
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Workflow Examples",
+          "icon": "window",
+          "href": "https://github.com/yolain/comfyui-yolain-workflows"
+        },
+        {
+          "anchor": "ComfyUI Docs",
+          "icon": "compass",
+          "href": "https://docs.comfy.org"
+        },
+        {
+          "anchor": "Video Tutorials",
+          "icon": "video",
+          "href": "https://www.xiaohongshu.com/user/profile/5a78992a4eacab58ad42cd1e"
+        }
+      ]
+    }
+  },
+  "navbar": {
+    "links": [],
+    "primary": {
+      "type": "github",
+      "href": "https://github.com/yolain/ComfyUI-Easy-Use"
+    }
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/yolain/comfyui-easy-use"
+    }
+  }
+}
